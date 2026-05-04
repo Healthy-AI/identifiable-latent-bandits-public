@@ -1,0 +1,25 @@
+lvm_path: "LVM_PATH"
+lvm: 'lvm' # one of 'lvm', 'vae', or 'oracle'
+dftype: 'ilb'
+n_iter: 2000
+return_ica: true
+bandits:
+  - mab: false
+  - greedy1: false
+  - greedy2: false
+  - projected_thompson: false
+  - regression: true
+  - mab_prior: false
+  - random_feature_bandit: false
+  - linear_thompson: false
+  - warmstart_thompson: false
+bandit_config:
+  - mab: {}
+  - greedy1: {}
+  - greedy2: {}
+  - projected_thompson: {}
+  - regression: {"checkpoint_dir": ""}
+  - mab_prior: {'use_lvm': True}
+  - random_feature_bandit: {"n_fourier": 300, "n_components": 5, "delta": 0.1, "lambda_reg": 1.0}
+  - linear_thompson: {"z_dim": 5, "lambda_reg": 1.0 , "arm_num": 20, "delta": 0.1}
+  - warmstart_thompson: {"d": 5, "alpha": 0.1, "delta": 0.1, "T": 20, "R": 0.25}

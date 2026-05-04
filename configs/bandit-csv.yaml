@@ -1,0 +1,26 @@
+filepath: datasets/<bandit_dataset_name>.csv
+lvm_path: "LVM_PATH"
+lvm: 'lvm' # one of 'lvm' or 'vae'
+dftype: 'adcb'
+n_iter: 2000
+return_ica: false
+bandits:
+  - mab: true
+  - greedy1: true
+  - greedy2: true
+  - projected_thompson: true
+  - regression: true
+  - mab_prior: true
+  - random_feature_bandit: false
+  - linear_thompson: false
+  - warmstart_thompson: false
+bandit_config:
+  - mab: {"reward_sigma": 0.25}
+  - greedy1: {}
+  - greedy2: {}
+  - projected_thompson: {"reward_sigma": 0.25}
+  - regression: {"checkpoint_dir":""}
+  - mab_prior: {"reward_sigma": 0.25, 'use_lvm': True}
+  - random_feature_bandit: {"n_fourier": 300, "n_components": 11, "delta": 0.1, "lambda_reg": 1.0}
+  - linear_thompson: {"d": 11, "lambda_": 1.0 , "delta": 0.1, "T": 20, "R": 0.0625}
+  - warmstart_thompson: {"d": 11, "alpha": 0.1, "delta": 0.1, "T": 20, "R": 0.0625}

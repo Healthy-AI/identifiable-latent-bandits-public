@@ -1,0 +1,10 @@
+name: RUN_NAME_FOR_WANDB
+filepath: datasets/<lvm_dataset_name>.csv
+data_dim: 4 # Fixed. Number of x_cols in ADCB data. Check x_cols in adcb_config.yaml
+n_segments: 100
+n_layers: [2, 4] # [2,4]
+n_obs_per_seg: [100, 200, 300]
+n_treatment: 8  # Fixed
+reward_sigma: 0.5
+num_epochs: 100 # Only for VAE and LSTM
+EVAL: false

@@ -1,0 +1,27 @@
+model_name: 'mlp'
+is_latent: false
+postprocess: false
+train_metrics:
+  - accuracy: false
+  - loss: false
+eval_metrics:
+  - accuracy: false
+  - latent_state: false
+  - reward: true
+  - actions: true
+model_params:
+  - pca: false 
+  - hidden_list: [16, 16, 5]
+  - average_means: true
+  - criterion_name: 'mse'
+  - criterion_params: {}
+  - lr: 1e-3 # Call float() to convert to float
+  - epoch_num: 100
+  - batch_size: 32
+  - window: 5
+  - optimizer_name: 'adam'
+  - optimizer_params: {'weight_decay': 1e-3} # Call float() to convert to float
+  - batch_norm: false
+  - dropout_rate: 0
+  - hidden_activation_name: 'relu'
+  - output_activation_name: 'sigmoid'

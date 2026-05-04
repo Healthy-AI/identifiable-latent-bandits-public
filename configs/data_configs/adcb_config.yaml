@@ -1,0 +1,11 @@
+z_cols: ["PTETHCAT", "PTRACCAT", "PTGENDER", "APOE4", "ABetaRatioEpsilon"]
+add_ptmarry: False
+x_cols: ["TAU", 'PTAU', 'FDG', 'AV45'] # PTMARRY added after one-hot encoding
+ptmarry_cols: ['PTMARRY_0', 'PTMARRY_1', 'PTMARRY_2', 'PTMARRY_3', 'PTMARRY_4']
+mu_col: ["PTETHCAT", "PTRACCAT", "PTGENDER", "APOE4", "ABETARatio"]
+potoutcome_cols: ['Y_0', 'Y_1', 'Y_2', 'Y_3', 'Y_4', 'Y_5', 'Y_6', 'Y_7']
+action_col: ['A']
+id_col: 'RID'
+reward_nonoise_col: 'Y_hat'
+noise_col: 'Delta_noise'
+t_col: ["VISCODE"] # Used only bandit time

@@ -1,0 +1,13 @@
+name: RUN_NAME_FOR_WANDB
+data_dim: 5
+n_segments: 100
+n_layers: [2, 4]
+n_obs_per_seg: [100, 200, 300]
+n_treatment: 20
+data_seed: 23
+latent_sigma: 1.
+latent_noise_sigma: 1.
+reward_sigma: 0.5
+num_epochs: 100 # Only for VAE and LSTM
+EVAL: false
+quick_eval: true

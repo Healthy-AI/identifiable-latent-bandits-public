@@ -1,0 +1,30 @@
+## Paper Defaults
+pdf.fonttype: 42
+ps.fonttype: 42
+mathtext.fontset: custom
+mathtext.rm: Bitstream Vera Sans
+mathtext.it: Bitstream Vera Sans:italic
+mathtext.bf: Bitstream Vera Sans:bold
+font.family: sans-serif
+font.size: 18
+## Grid
+#grid.color: black
+#grid.linestyle: -.          # solid
+#grid.linewidth: 0.4        # in points
+#grid.alpha:     0.2        # transparency, between 0.0 and 1.0
+## Extras:
+legend.shadow: False
+## Axis and line adjustment
+axes.labelsize : 18
+lines.linewidth: 2.0
+axes.linewidth: 1.5
+xtick.major.width: 1.5
+ytick.major.width: 1.5
+xtick.direction : in
+ytick.direction : in
+ytick.right: True
+ytick.left: True
+xtick.bottom: True
+xtick.top: True
+xtick.labelsize: 16
+ytick.labelsize: 16

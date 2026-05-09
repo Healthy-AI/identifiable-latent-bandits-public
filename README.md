@@ -1,5 +1,10 @@
 # Identifiable Latent Bandits
+
 Code for the paper [Identifiable Latent Bandits](https://arxiv.org/abs/2407.16239).
+
+Project page: [balcioglu-ahmet.github.io/identifiable-latent-bandits](https://balcioglu-ahmet.github.io/identifiable-latent-bandits/)
+
+We use the semi-synthetic [ADCB environment](https://github.com/Healthy-AI/ADCB), the generated data is available [in the release](https://github.com/Healthy-AI/identifiable-latent-bandits-public/releases/tag/ILB-data).
 
 This repository contains the code used to train identifiable latent variable
 models; run the context prior greedy (CPG), full prior greedy (FPG), and
@@ -142,19 +147,6 @@ executable plotting calls. Update or comment those blocks before running or
 importing the file, then call the desired helpers after the relevant
 `bandit_results/` directories exist.
 
-## Citation
-```bib
-@misc{balcioglu2026ILB,
-      title={Identifiable Latent Bandits: Leveraging observational data for personalized decision-making}, 
-      author={Ahmet Zahid Balcıoğlu and Newton Mwai and Emil Carlsson and Fredrik D. Johansson},
-      year={2025},
-      eprint={2407.16239},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2407.16239},
-}
-```
-
 ## Notes
 
 - Synthetic ILB data is generated from the LVM configs at run time.
@@ -164,32 +156,24 @@ importing the file, then call the desired helpers after the relevant
   produced by `lvm_run.py`, since the bandit runner locates the saved LVM config
   relative to that path.
 
+## Citation
+```bib
+@article{balcioglu2026ILB,
+  title={Identifiable Latent Bandits: Leveraging observational data for personalized decision-making}, 
+  author={Ahmet Zahid Balcıoğlu and Newton Mwai and Emil Carlsson and Fredrik D. Johansson},
+  journal={Transactions on Machine Learning Research},
+  year={2026},
+  url={https://openreview.net/forum?id=SvkZ76wKpu},
+}
+```
+
+## Acknowledgements
+
+This work was partially supported by the Wallenberg AI, Autonomous Systems and Software Program
+(WASP) funded by the Knut and Alice Wallenberg Foundation.
+
+The computations and data handling were enabled by resources provided by the National Academic Infrastructure for Supercomputing in Sweden (NAISS), partially funded by the Swedish Research Council through grant agreement no. 2022-06725.
+
 ## License
 
-This repository is released under the MIT License, see [LICENSE](LICENSE). Portions derived from ICE-BeeM retain their original MIT
-notice:
-
-```
-MIT License
-
-Copyright (c) 2020 Ilyes Khemakhem
-
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+This repository is released under the MIT License, see [LICENSE](LICENSE). Portions derived from ICE-BeeM retain their [original MIT notice](https://github.com/ilkhem/icebeem/blob/master/LICENSE).

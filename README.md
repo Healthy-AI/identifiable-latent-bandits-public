@@ -160,7 +160,7 @@ importing the file, then call the desired helpers after the relevant
 ```bib
 @article{balcioglu2026ILB,
   title={Identifiable Latent Bandits: Leveraging observational data for personalized decision-making}, 
-  author={Ahmet Zahid Balcıoğlu and Newton Mwai and Emil Carlsson and Fredrik D. Johansson},
+  author={Ahmet Zahid Balc{\i}o{\u{g}}lu and Newton Mwai and Emil Carlsson and Fredrik D. Johansson},
   journal={Transactions on Machine Learning Research},
   year={2026},
   url={https://openreview.net/forum?id=SvkZ76wKpu},
